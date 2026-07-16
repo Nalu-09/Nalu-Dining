@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nalu Dining｜想いを料理に映す出張料理・イベント料理</title>
+<meta name="description" content="個人の記念日から法人イベントまで。主催者の想いや開催目的に合わせ、会場で仕込み・調理・盛り付けを行う出張料理サービスです。東京・神奈川・千葉を中心に対応。">
+
+<!-- ▼ OGP設定: 画像は images/ogp.jpg を差し替えてください（推奨 1200x630） -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nalu Dining｜想いを料理に映す出張料理・イベント料理">
+<meta property="og:description" content="会場で仕込みから調理・盛り付けまで。記憶に残る食体験を、ひと皿から。">
+<meta property="og:image" content="images/ogp.jpg">
+<meta property="og:url" content="https://nalu-09.com/dining/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="images/favicon.png">
+
+<!-- 明朝体フォント（日本語）＋ Cormorant Garamond（欧文キャップ） -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Serif+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="site-header">
+  <a href="#hero" class="brand-mark" aria-label="Nalu Dining トップへ">
+    <img src="images/logo.png" alt="Nalu Dining ロゴ">
+  </a>
+  <nav aria-label="サイト内メニュー">
+    <a href="#about">Nalu Diningとは</a>
+    <a href="#scenes">利用シーン</a>
+    <a href="#pricing">料金</a>
+    <a href="#profile">料理人</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <!-- ▼ Instagram URL変更箇所: data-ig-link を持つ要素すべてに反映されます（js/script.js 冒頭のIG_URLでも一括変更可） -->
+  <a class="btn" data-ig-link href="https://www.instagram.com/nalu.yuta?igsh=MWUxYmkxazNnb21raQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">
+    相談する
+  </a>
+</header>
+
+<!-- ============================================================
+     1. HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <!-- ▼ 画像差し替え: images/hero-cooking.jpg（調理中の後ろ姿・添付写真使用） -->
+    <img src="images/hero-cooking.jpg" alt="会場のキッチンで調理するNalu Diningの料理人" loading="eager"
+         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/hero-cooking.jpg<br>を配置してください</span>'}))">
+  </div>
+  <div class="hero-content">
+    <img class="hero-logo" src="images/logo.png" alt="Nalu Dining"
+         onerror="this.style.display='none'">
+    <p class="hero-copy">想いを料理に映し<br>その日を、特別なひとときへ。</p>
+    <p class="hero-statement">記憶に残る食体験を、ひと皿から。会場で仕込み、調理し、目の前で仕上げる出張料理。</p>
+    <div class="hero-cta">
+      <a class="btn" data-ig-link href="https://www.instagram.com/nalu.yuta?igsh=MWUxYmkxazNnb21raQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">
+        Instagramで開催について相談する
+      </a>
+      <a class="btn btn--ghost" href="#about">Nalu Diningについて見る</a>
+    </div>
+  </div>
+  <span class="hero-scroll">SCROLL</span>
+</section>
+
+<!-- ============================================================
+     2. 個人／法人 導線
+     ============================================================ -->
+<div class="audience">
+  <a href="#scenes-personal" class="audience-card reveal">
+    <span class="tag">FOR PRIVATE OCCASIONS</span>
+    <h3>個人のお客様</h3>
+    <p style="color:var(--sumi-soft); font-size:14px;">記念日、プロポーズ、誕生日、ホームパーティー、少人数の特別な食事会に。</p>
+    <ul>
+      <li>記念日</li><li>プロポーズ</li><li>ホームパーティー</li><li>2〜6名</li>
+    </ul>
+    <span class="link">利用シーンを見る</span>
+  </a>
+  <a href="#scenes-business" class="audience-card reveal">
+    <span class="tag">FOR BUSINESS & EVENTS</span>
+    <h3>法人・イベント主催者</h3>
+    <p style="color:var(--sumi-soft); font-size:14px;">周年記念、懇親会、交流イベント、社内パーティーまで。</p>
+    <ul>
+      <li>周年記念</li><li>懇親会</li><li>交流イベント</li><li>20〜100名規模</li>
+    </ul>
+    <span class="link">利用シーンを見る</span>
+  </a>
+</div>
+
+<!-- ============================================================
+     3. Nalu Diningとは
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="split reveal">
+      <div class="split-media">
+        <!-- ▼ 画像差し替え: images/course-plates.jpg（少人数コース料理の例） -->
+        <img src="images/course-plates.jpg" alt="会場で提供されたコース料理"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/course-plates.jpg<br>を配置してください</span>'}))">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow">WHAT IS NALU DINING</span>
+        <h2>完成した料理を運ぶのではなく、<br>会場でつくる出張料理です。</h2>
+        <p>Nalu Diningは、完成した料理を並べるだけのケータリングではありません。個人の記念日やホームパーティー、法人の周年イベントや交流会へ伺い、原則として会場で仕込みから調理、盛り付け、提供までを行います。</p>
+        <p>料理の内容は、ジャンルや予算だけで決めません。イベントの目的、主催者の理念、参加者の属性、会場の雰囲気、その場に生まれてほしい感情までをうかがい、料理と提供方法、演出に落とし込みます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. 料理で、その場の意味を深める
+     ============================================================ -->
+<section class="section section--ink">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">BEYOND A GOOD MEAL</span>
+      <h2>料理で、その場の意味を深める</h2>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+    <div class="split is-reverse reveal">
+      <div class="split-media">
+        <!-- ▼ 画像差し替え: images/profile-plating.jpg（盛り付け中の一枚） -->
+        <img src="images/profile-plating.jpg" alt="目の前で仕上げる盛り付けの様子"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/profile-plating.jpg<br>を配置してください</span>'}))">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow">MEMORY, NOT JUST A MEAL</span>
+        <h2 style="color:var(--kinari);">「良いイベントだった」で終わらせない。</h2>
+        <p>イベントへ参加する理由は、人との出会いや事業の発展、大切な人との節目など、一人ひとり異なります。Nalu Diningが目指すのは、その場が終わったあとも、「あの料理がおいしかった」「あの人の料理をもう一度食べたい」と思い出してもらえることです。</p>
+        <p>料理をきっかけに参加者同士の会話や関係が生まれ、その後の発展につながることも大切にしています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. 選ばれる理由
+     ============================================================ -->
+<section class="section" id="reasons">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">WHY NALU DINING</span>
+      <h2>選ばれる理由</h2>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+  </div>
+  <div class="reasons reveal">
+    <div class="reason">
+      <span class="num">01</span>
+      <h3>想いからメニューを設計する</h3>
+      <p>主催者の理念や開催に込めた想いをうかがい、料理とその提供方法に落とし込みます。</p>
+    </div>
+    <div class="reason">
+      <span class="num">02</span>
+      <h3>会場で仕込みから調理する</h3>
+      <p>完成品を運ぶのではなく、香りや音も含めてその場でつくります。</p>
+    </div>
+    <div class="reason">
+      <span class="num">03</span>
+      <h3>盛り付けと見た目まで設計する</h3>
+      <p>見た瞬間に期待が高まる盛り付けまでを、料理の一部として設計します。</p>
+    </div>
+    <div class="reason">
+      <span class="num">04</span>
+      <h3>ライブ演出に対応する</h3>
+      <p>フランベやフルーツ盛りなど、目で楽しめる演出も相談できます。</p>
+    </div>
+    <div class="reason">
+      <span class="num">05</span>
+      <h3>少人数から大規模まで相談可能</h3>
+      <p>2名の食事会から、約100名規模の法人イベントまで対応します。</p>
+    </div>
+    <div class="reason">
+      <span class="num">06</span>
+      <h3>個人・法人を問わず対応する</h3>
+      <p>どちらか一方に偏らず、同じ丁寧さでヒアリングと提案を行います。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. ケータリングではなく、会場でつくる理由
+     ============================================================ -->
+<section class="section" style="background:var(--washi);">
+  <div class="container">
+    <div class="split reveal">
+      <div class="split-media">
+        <!-- ▼ 画像差し替え: images/live-fruit-cutting.jpg（会場での調理・演出） -->
+        <img src="images/live-fruit-cutting.jpg" alt="会場で仕込みを行う様子"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/live-fruit-cutting.jpg<br>を配置してください</span>'}))">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow">WHY WE COOK ON SITE</span>
+        <h2>出来上がる時間も、<br>イベントの一部として。</h2>
+        <p>Nalu Diningは、原則として料理を完成させた状態で運び込むケータリングは行いません。会場に広がる香り、調理の音、料理が仕上がっていく様子も、期待感や高揚感を生み出す大切な要素だと考えているためです。</p>
+        <p>出来立ての温度、食感、盛り付けを大切にしながら、調理可能な会場へ伺い、その場で仕込みから調理、盛り付けまでを行います。参加者だけでなく、運営される方にもその時間を楽しんでいただきたいと考えています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. 利用シーン
+     ============================================================ -->
+<section class="section" id="scenes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">SCENES</span>
+      <h2>利用シーン</h2>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+    <div class="scene-groups reveal">
+      <div class="scene-group" id="scenes-personal">
+        <h3>個人のお客様<span class="cap">主な対象人数：2〜6名</span></h3>
+        <ul class="scene-list">
+          <li>記念日</li><li>プロポーズ</li><li>誕生日</li><li>家族の集まり</li>
+          <li>ホームパーティー</li><li>友人との食事会</li><li>同窓会</li><li>合コン</li>
+          <li>少人数の特別な会食</li>
+        </ul>
+      </div>
+      <div class="scene-group" id="scenes-business">
+        <h3>法人・イベント主催者<span class="cap">10名前後〜約100名規模まで相談可能</span></h3>
+        <ul class="scene-list">
+          <li>周年記念</li><li>懇親会</li><li>交流イベント</li><li>新年会</li><li>忘年会</li>
+          <li>結婚式二次会</li><li>社内イベント</li><li>事業者交流会</li>
+          <li>コミュニティイベント</li><li>20〜30名パーティー</li><li>100名規模の法人イベント</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. 料理・演出例（ギャラリー）
+     ============================================================ -->
+<section class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">DISHES & LIVE PERFORMANCE</span>
+      <h2>料理・演出例</h2>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+  </div>
+  <div class="gallery reveal">
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/course-plates.jpg -->
+      <img src="images/course-plates.jpg" alt="少人数向けコース料理"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/course-plates.jpg</span>'}))">
+      <span class="cap">コース仕立て（少人数）</span>
+    </div>
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/event-canapes.jpg -->
+      <img src="images/event-canapes.jpg" alt="イベント向け個々盛り料理"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/event-canapes.jpg</span>'}))">
+      <span class="cap">個々盛り（交流イベント）</span>
+    </div>
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/live-fruit-arranging.jpg -->
+      <img src="images/live-fruit-arranging.jpg" alt="目の前で仕上げるフルーツ盛り"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/live-fruit-arranging.jpg</span>'}))">
+      <span class="cap">ライブ仕上げ演出</span>
+    </div>
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/event-50-dishes.jpg（提供済み） -->
+      <img src="images/event-50-dishes.jpg" alt="法人イベントでの提供例"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/event-50-dishes.jpg</span>'}))">
+      <span class="cap">法人イベントでの提供例</span>
+    </div>
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/live-fruit-presenting.jpg -->
+      <img src="images/live-fruit-presenting.jpg" alt="演出を交えた提供の様子"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/live-fruit-presenting.jpg</span>'}))">
+      <span class="cap">会場での演出</span>
+    </div>
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/event-fruit-gift.jpg -->
+      <img src="images/event-fruit-gift.jpg" alt="フルーツ盛りの演出事例"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/event-fruit-gift.jpg</span>'}))">
+      <span class="cap">フルーツ盛り演出</span>
+    </div>
+    <div class="g-item">
+      <!-- ▼ 画像差し替え: images/salad-course.jpg（提供済み） -->
+      <img src="images/salad-course.jpg" alt="会場で提供されたサラダ"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/salad-course.jpg</span>'}))">
+      <span class="cap">前菜・サラダの一例</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9. プラン・料金
+     ============================================================ -->
+<section class="section" id="pricing" style="background:var(--washi);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">PLANS & PRICING</span>
+      <h2>プラン・料金</h2>
+      <p>ご希望の人数、料理内容、会場設備、提供形式に応じてお見積もりいたします。価格はすべて税込表示です。</p>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+
+    <div class="plans reveal">
+      <div class="plan">
+        <span class="tag">PRIVATE</span>
+        <h3>個人・少人数プラン</h3>
+        <p class="price">¥50,000<small> （税込）〜 / 2〜6名</small></p>
+        <ul>
+          <li>4〜6品程度のコース</li>
+          <li>食材費を含む</li>
+          <li>メニュー設計・会場での仕込み</li>
+          <li>調理・盛り付け</li>
+          <li>使用した調理スペースの原状復帰</li>
+        </ul>
+        <p class="note">特別食材、演出、遠方交通費は別途お見積もりとなります。</p>
+      </div>
+
+      <div class="plan is-highlight">
+        <span class="tag">EVENT</span>
+        <h3>イベントプラン</h3>
+        <p class="price">¥80,000<small> （税込）〜 / 10〜30名程度</small></p>
+        <ul>
+          <li>1名あたり6,600円（税込）〜が目安</li>
+          <li>最低利用金額と人数単価を比較し、高い方を適用</li>
+          <li>内容・人数・会場設備・提供形式により個別見積もり</li>
+        </ul>
+        <p class="note">例：1名6,600円×20名＝132,000円の場合、最低利用金額ではなく132,000円を適用します。</p>
+      </div>
+
+      <div class="plan">
+        <span class="tag">CORPORATE</span>
+        <h3>法人・大規模イベント</h3>
+        <p class="price">¥180,000<small> （税込）〜 / 30〜100名程度</small></p>
+        <ul>
+          <li>会場設備・調理スタッフ・サービススタッフを確認</li>
+          <li>提供形式に応じて個別見積もり</li>
+          <li>100名規模は対応可否を事前に確認</li>
+        </ul>
+        <p class="note">30名以上は会場設備・提供形式・スタッフ人数を確認のうえお見積もりします。</p>
+      </div>
+    </div>
+
+    <div class="pricing-extra reveal">
+      <dl>
+        <div><dt>スタッフ費：</dt><dd>調理補助 1名15,000円（税込）〜／サービス・配膳補助 1名12,000円（税込）〜／短時間補助 1名8,000円（税込）〜（拘束時間・業務内容により変動）</dd></div>
+        <div><dt>出張費：</dt><dd>東京23区および近郊エリア（東京都・神奈川県・千葉県）の出張費は基本料金に含みます。遠方、新幹線・特急の利用、宿泊を伴う場合は、別途交通費・宿泊費を頂戴します。</dd></div>
+        <div><dt>事前決済特典：</dt><dd>事前決済による特典をご用意する場合があります。詳細はお問い合わせ時にご案内します。</dd></div>
+      </dl>
+    </div>
+    <p class="pricing-footnote">100名まで必ず対応できるとは限りません。会場設備、スタッフ体制、提供形式を確認したうえで対応可否をご案内します。</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     10. ご依頼の流れ
+     ============================================================ -->
+<section class="section" id="flow">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>ご依頼の流れ</h2>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+    <div class="flow reveal">
+      <div class="flow-step"><div><h3>Instagramまたはフォームからお問い合わせ</h3><p>開催内容が固まっていなくてもご相談ください。</p></div></div>
+      <div class="flow-step"><div><h3>ご希望内容のヒアリング</h3><p>開催目的、想い、参加者、雰囲気などをうかがいます。</p></div></div>
+      <div class="flow-step"><div><h3>会場設備の確認</h3><p>調理環境、設備、動線を確認します。</p></div></div>
+      <div class="flow-step"><div><h3>料理・演出のご提案</h3><p>ヒアリング内容をもとに、メニューと提供方法をご提案します。</p></div></div>
+      <div class="flow-step"><div><h3>お見積もり</h3><p>人数・内容・会場条件をふまえてお見積もりします。</p></div></div>
+      <div class="flow-step"><div><h3>決済・ご予約確定</h3><p>ご予約金、または内容に応じたお支払いでご予約を確定します。</p></div></div>
+      <div class="flow-step"><div><h3>当日：会場入り・仕込み・調理</h3><p>人数と提供形式に応じた準備時間で会場入りします。</p></div></div>
+      <div class="flow-step"><div><h3>提供・片付け</h3><p>調理器具の洗浄、調理スペースの原状復帰まで行います。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     11. 料理人プロフィール
+     ============================================================ -->
+<section class="section section--ink" id="profile">
+  <div class="container">
+    <div class="profile reveal">
+      <div class="profile-media">
+        <!-- ▼ 画像差し替え: images/profile-plating.jpg（プロフィール用・添付写真使用） -->
+        <img src="images/profile-plating.jpg" alt="料理人プロフィール写真"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/profile-plating.jpg<br>を配置してください</span>'}))">
+      </div>
+      <div class="profile-text">
+        <span class="eyebrow">CHEF PROFILE</span>
+        <h2>合同会社Nalu-09 代表</h2>
+        <p>調理師免許取得後、都内の大規模ホテルにて約4年半、婚礼料理、コース料理、ビュッフェ、ラウンジ調理を経験。その後、アメリカンダイニングで約3年間、幅広い料理と店舗営業に携わる。</p>
+        <p>現在は会員制レストランの調理現場にも携わりながら、合同会社Nalu-09代表として、出張料理、イベント料理、会員制飲食サービスの企画・提供を行っている。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     12. 実績
+     ============================================================ -->
+<section class="section" id="track-record">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">TRACK RECORD</span>
+      <h2>実績</h2>
+      <p>少人数の会食から、約100名規模の法人周年イベントまで、個人・法人を問わず料理提供を行ってきました。</p>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+    <div class="track reveal">
+      <div class="track-media">
+        <!-- ▼ 画像差し替え: images/event-50-dishes.jpg（提供済み） -->
+        <img src="images/event-50-dishes.jpg" alt="法人周年イベントでの提供実績"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',innerHTML:'<span>images/event-50-dishes.jpg</span>'}))">
+      </div>
+      <ul class="track-list">
+        <li><span>法人周年イベント</span><span>約100名</span></li>
+        <li><span>個人イベント</span><span>10〜50名程度</span></li>
+        <li><span>少人数の会食</span><span>2〜6名</span></li>
+        <li><span>交流イベントでの提供</span><span>20〜30名</span></li>
+        <li><span>合コンでの料理提供</span><span>少人数</span></li>
+        <li><span>自社イベントでの料理提供</span><span>しゅわっとみーる 等</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     13. 会場条件
+     ============================================================ -->
+<section class="section" style="background:var(--washi);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">VENUE REQUIREMENTS</span>
+      <h2>会場条件</h2>
+      <p>原則として、調理可能な会場であることが必要です。以下の設備が整っていると、より柔軟にご提案できます。</p>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+    <ul class="venue-grid reveal">
+      <li>飲食店営業許可のある会場</li>
+      <li>コンロ2口以上（ガス推奨・IH相談可）</li>
+      <li>冷蔵庫・冷凍庫</li>
+      <li>給排水設備</li>
+      <li>作業台・換気設備</li>
+      <li>食器・調理器具の使用許可</li>
+    </ul>
+    <p class="pricing-footnote">会場設備が不足している場合は、内容の調整、または必要な備品費を別途お見積もりします。</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     14. FAQ
+     ============================================================ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>よくあるご質問</h2>
+      <svg class="brush-divider" viewBox="0 0 120 34"><path d="M4 4 C 30 30, 70 30, 96 6"/><circle cx="70" cy="16" r="1.6"/><circle cx="80" cy="10" r="1.6"/></svg>
+    </div>
+    <div class="faq reveal" id="faq-list">
+      <div class="faq-item">
+        <button class="faq-q"><span>何名から利用できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>個人利用は原則2名以上、主に2〜6名を承っています。イベント利用は10名前後からご相談いただけます。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>どの地域まで対応できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>東京都・神奈川県・千葉県を中心に対応しています。遠方の場合はご相談ください（交通費・宿泊費は別途）。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>自宅でも依頼できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>調理可能な設備があれば、ご自宅でもご利用いただけます。詳しくは会場条件をご確認ください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>どのような調理設備が必要ですか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>コンロ2口以上、冷蔵庫・冷凍庫、給排水設備、作業台、換気設備、食器・調理器具の使用許可を目安としています。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>IHでも対応できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>ガス設備を推奨していますが、IHでもご相談いただけます。事前に会場設備をお知らせください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>食器は用意してもらえますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>原則として会場にある食器を使用します。不足がある場合は別途ご相談ください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>ドリンクも頼めますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>ドリンクの提供は原則として行っておらず、主催者様または会場側でご用意いただいています。料理とのペアリングのご提案は内容に応じて対応可能です。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>アレルギー対応は可能ですか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>事前にお知らせいただければ、内容に応じて対応をご相談します。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>何日前までに相談すればよいですか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>原則として開催希望日の1か月前までにご相談ください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>直近のご依頼でも対応できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>スケジュールや内容によっては対応できる場合があります。まずはお問い合わせください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>配膳や片付けも依頼できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>調理・盛り付け・調理器具の洗浄・調理スペースの原状復帰は基本料金に含みます。配膳・下膳・会場全体の清掃などは人数や規模に応じて別途ご相談ください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>フランベなどの演出はできますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>会場の許可、換気設備、安全面を確認したうえで実施可能です。フルーツ盛りやライブ仕上げもご相談いただけます。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>支払い方法を教えてください。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>クレジットカード、銀行振込、法人請求書払い（法人のみ）、条件により当日決済に対応しています。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>キャンセル料はいつから発生しますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>個人・30名未満の場合、14日前までは無料、以降は日数に応じて見積総額の30〜100％をいただきます。法人・30名以上は契約成立後から段階的に発生します。詳細はお問い合わせ時にご案内します。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>100名規模でも対応できますか。</span><span class="icon"></span></button>
+        <div class="faq-a"><p>会場設備、スタッフ体制、提供形式を確認したうえで対応可否をご案内します。まずはご相談ください。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     15. 補助導線：フォーム（送信先未設定の場合は自動非表示）
+     ============================================================ -->
+<section class="section" id="contact-form" style="background:var(--washi); display:none;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">INQUIRY FORM</span>
+      <h2>詳細を入力して相談する</h2>
+    </div>
+    <div class="inquiry reveal">
+      <p class="inquiry-note">お急ぎの場合、確認が最も早いのはInstagram DMです。フォームは補助的な連絡手段としてご利用ください。</p>
+      <!-- ▼ 送信先設定: js/script.js の FORM_ENDPOINT に送信先URLを設定すると自動で表示されます -->
+      <form id="inquiry-form">
+        <div class="field"><label for="f-type">個人／法人</label>
+          <select id="f-type" name="type"><option>個人</option><option>法人</option></select>
+        </div>
+        <div class="field"><label for="f-name">氏名</label><input id="f-name" name="name" type="text" required></div>
+        <div class="field"><label for="f-company">会社名</label><input id="f-company" name="company" type="text"></div>
+        <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" required></div>
+        <div class="field"><label for="f-ig">Instagramアカウント</label><input id="f-ig" name="instagram" type="text"></div>
+        <div class="field"><label for="f-date">開催希望日</label><input id="f-date" name="date" type="date"></div>
+        <div class="field"><label for="f-place">開催場所</label><input id="f-place" name="place" type="text"></div>
+        <div class="field"><label for="f-num">利用人数</label><input id="f-num" name="number" type="text"></div>
+        <div class="field"><label for="f-purpose">利用目的</label><input id="f-purpose" name="purpose" type="text"></div>
+        <div class="field"><label for="f-budget">希望予算</label><input id="f-budget" name="budget" type="text"></div>
+        <div class="field"><label for="f-style">希望する提供形式</label><input id="f-style" name="style" type="text"></div>
+        <div class="field"><label for="f-kitchen">会場の調理設備</label><input id="f-kitchen" name="kitchen" type="text"></div>
+        <div class="field"><label for="f-performance">希望する演出</label><input id="f-performance" name="performance" type="text"></div>
+        <div class="field"><label for="f-allergy">アレルギー</label><input id="f-allergy" name="allergy" type="text"></div>
+        <div class="field full"><label for="f-other">その他相談内容</label><textarea id="f-other" name="other"></textarea></div>
+        <div class="field full submit-row">
+          <button type="submit" class="btn">送信する</button>
+          <p class="form-status" id="form-status"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     16. Instagramへの最終CTA
+     ============================================================ -->
+<section class="section section--ink final-cta">
+  <div class="container">
+    <h2 class="reveal">まずは、開催したい内容を<br>お聞かせください。</h2>
+    <p class="reveal">開催希望日、場所、人数、ご予算、利用目的がお決まりでしたら、あわせてお送りください。</p>
+    <div class="hero-cta reveal">
+      <a class="btn" data-ig-link href="https://www.instagram.com/nalu.yuta?igsh=MWUxYmkxazNnb21raQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">
+        Instagramで開催について相談する
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Nalu Dining" onerror="this.style.display='none'">
+        <p>その日を、料理で記憶に残す。会場で仕込みから調理・盛り付けまで行う出張料理サービスです。</p>
+      </div>
+      <div class="footer-col">
+        <h4>NALU DINING</h4>
+        <ul>
+          <li><a href="#about">Nalu Diningとは</a></li>
+          <li><a href="#pricing">プラン・料金</a></li>
+          <li><a href="#profile">料理人プロフィール</a></li>
+          <li><a href="#faq">よくあるご質問</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>LINKS</h4>
+        <ul>
+          <li><a href="https://nalu-09.com" target="_blank" rel="noopener">公式ホームページ</a></li>
+          <li><a data-ig-link href="https://www.instagram.com/nalu.yuta?igsh=MWUxYmkxazNnb21raQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li>
+          <!-- ▼ 法務ページURL変更箇所: href="#" を各URLに差し替えてください -->
+          <li><a href="#" data-legal="privacy">プライバシーポリシー</a></li>
+          <li><a href="#" data-legal="terms">利用規約</a></li>
+          <li><a href="#" data-legal="tokushoho">特定商取引法に基づく表記</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Nalu-09 LLC. Nalu Dining</span>
+      <span>運営：合同会社Nalu-09</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     Sticky mobile CTA
+     ============================================================ -->
+<div class="sticky-cta">
+  <a data-ig-link href="https://www.instagram.com/nalu.yuta?igsh=MWUxYmkxazNnb21raQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagramで相談する</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
